@@ -2,14 +2,8 @@
   "name": "nzcrashes_data",
   "version": "0.1.0",
   "license": "MIT",
-  "dependencies": {
-    "JSONStream": "^1.3.5",
-    "event-stream": "^4.0.1",
-    "request": "^2.88.0"
-  },
   "scripts": {
-    "prepare:dev": "node prepareData.js './data/devCrashes.json' 20000",
-    "prepare:prod": "node prepareData.js './data/crashes.json'",
-    "prepare:csv": "curl --request GET --compressed --url https://opendata.arcgis.com/datasets/a163c5addf2c4b7f9079f08751bd2e1a_0.csv > crashes.csv && gzip 'crashes.csv'"
+    "prepare:dev": "node prepareDevData.js",
+    "prepare:prod": "bash prepareData.sh"
   }
 }

@@ -7,3 +7,5 @@ yarn-debug.log*
 yarn-error.log*
 
 .yarn
+
+./data/crashDataRaw.csv
